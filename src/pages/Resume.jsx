@@ -8,6 +8,7 @@ import ResumeCard from "../components/ResumeCard";
 import "../css/reset.css";
 import "../css/font.css";
 import "../css/resume.css";
+import "../css/resumeCard.css"
 import "../css/resumeBackground.css";
 
 function Resume() {
@@ -18,16 +19,12 @@ function Resume() {
 
   return (
     <div id="resume-page">
-      {/* 상단 고정 헤더 */}
       <Header />
 
-      {/* 배경 원 + SCROLL 애니메이션 */}
       <ResumeBackground />
 
-      {/* 기존 ResumeCard (정상 작동 중) */}
       <ResumeCard />
-      {/* <TestBackground /> */}
-      {/* 하단 ContactCircle */}
+
       <ContactCircle />
     </div>
   );

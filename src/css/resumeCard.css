@@ -1,6 +1,4 @@
-@import "./resume.css";
-
-
+/* 카드 기본 */
 #my-p {
   color: #313131;
   position: absolute;
@@ -10,68 +8,58 @@
   pointer-events: auto;
   padding: 2rem 3rem;
   border-radius: 2rem;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.12),
+              0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 #my-p:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+              0 10px 10px rgba(0,0,0,0.22);
 }
 
+/* 카드 위치 */
 .p1 {
   top: 65%;
   left: 10%;
-  background-image: url(../../public/img/3dwork.png);
-  background-repeat: no-repeat;
-  background-size: 60% auto;
-  background-position: right bottom;
+  background: url(/img/3dwork.png) no-repeat right bottom / 60% auto;
 }
 
 .p2 {
   top: 150%;
   left: 40%;
-  background-image: url(../../public/img/3dstudy.png);
-  background-repeat: no-repeat;
-  background-size: 60% auto;
-  background-position: left bottom;
+  background: url(/img/3dstudy.png) no-repeat left bottom / 60% auto;
   text-align: right;
 }
 
 .p3 {
   top: 240%;
   left: 10%;
-  background-image: url(../../public/img/work2.png);
-  background-repeat: no-repeat;
-  background-size: 60% auto;
-  background-position: right bottom;
+  background: url(/img/work2.png) no-repeat right bottom / 60% auto;
 }
 
+/* 리스트 */
 .p3 ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: left;
-  align-items: center;
   width: 22vw;
 }
 
 .p3 ul li {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
 
 .p3 img {
-  display: block;
   width: 2vw;
-  height: auto;
 }
 
+/* 타이틀 */
 .card-title {
   position: relative;
   display: inline-block;
   font-size: 2rem;
-  line-height: 3rem;
   font-weight: bold;
 }
 
@@ -83,7 +71,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 3px;
-  background-color: rgb(135, 194, 249);
+  background: rgb(135, 194, 249);
   transition: width 0.3s ease;
 }
 
@@ -91,13 +79,12 @@
   width: 100%;
 }
 
+/* 텍스트 */
 .card-txts li {
   padding-top: 1rem;
   font-size: 1rem;
-  line-height: 1rem;
 }
 
 .card-txts li strong {
   font-weight: 700;
 }
-

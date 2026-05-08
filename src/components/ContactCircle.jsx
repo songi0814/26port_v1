@@ -7,7 +7,6 @@ import workImg from "/img/work.png";
 const ContactCircle = () => {
   const navigate = useNavigate();
 
-  // ✅ ContactCircle 등장 애니메이션
   useEffect(() => {
     const timer = setTimeout(() => {
       gsap.from(".contact-fixed", { opacity: 0, y: 50, duration: 1, ease: "power2.out" });
@@ -16,9 +15,8 @@ const ContactCircle = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // ✅ 클릭 시 Contact.jsx 페이지로 이동
   const handleClick = () => {
-    navigate("/contact"); // ⚠️ 기존 "../pages/Contact.jsx" → 올바른 경로 "/contact"
+    navigate("/contact");
   };
 
   const radius = 80;

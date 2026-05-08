@@ -22,7 +22,6 @@ const Contact = () => {
       for (let i = 0; i < numLines; i++) {
         ctx.beginPath();
 
-        // 🎨 포트폴리오 컬러 기반 그라데이션 (컨셉 통합)
         const grad = ctx.createLinearGradient(0, 0, w, h);
         colors.forEach((c, idx) => grad.addColorStop(idx / (colors.length - 1), c));
         ctx.strokeStyle = grad;
@@ -43,14 +42,11 @@ const Contact = () => {
     };
 
     const render = () => {
-      // 🌿 포트폴리오 배경 컬러
       ctx.fillStyle = "#fff";
       ctx.fillRect(0, 0, w, h);
 
-      // 상단 오른쪽 곡선 (그린 톤)
       drawWave(w * 0.1, h * 0.08, 1, ["#bfa173", "#abff84", "#0ae448"]);
 
-      // 하단 왼쪽 곡선 (핑크-오렌지 톤)
       drawWave(-w * 0.15, h * 0.9, -1, ["#f7bdf8", "#cd237f", "#ff8709"]);
 
       time += 0.008;
@@ -86,7 +82,6 @@ const Contact = () => {
         <ul>
           <li><strong>Kakao Id </strong>thddltka</li>
           <li><strong>Email </strong>thddltka1995@gmail.com</li>
-          <li><strong>Phone </strong>010.2963.0814</li>
         </ul>
       </div>
 

@@ -41,3 +41,10 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(75, 75, 75, 0.548)
 }
+
+.dep1 li a.active {
+    background-color: #fff;
+    color: rgb(135, 194, 249);
+    font-weight: 700;
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.2);
+}
